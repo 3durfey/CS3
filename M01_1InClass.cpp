@@ -1,3 +1,8 @@
+/* 
+*  Author: Peter Durfey
+*  Date last updated: 1/24/2023
+* Purpose:  simple game in class assignment 1
+*/
 #include <iostream>
 using namespace std;
 
@@ -60,9 +65,9 @@ int main() {
         }
         else 
         {
-            cout << "You lose:(\n";
-            player1.decreaseHealth(50);
             cout << "Player health: " << player1.getHealth() << endl;
+            player1.decreaseHealth(50);
+            cout << "You lose:(\n";
         }
 }
 

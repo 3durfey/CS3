@@ -1,6 +1,10 @@
 {
   "files.associations": {
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "string": "cpp",
+    "ostream": "cpp",
+    "__tree": "cpp",
+    "map": "cpp"
   },
   "C_Cpp_Runner.cCompilerPath": "clang",
   "C_Cpp_Runner.cppCompilerPath": "clang++",
