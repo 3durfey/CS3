@@ -1,0 +1,4 @@
+NAME        |       SPECIES         |       BREED       |       COLOR           
+ben         |       dogdfff         |       poodf         |       black
+be         |       dog         |       golden         |       retriver
+ben         |       dog         |       fdf         |       df

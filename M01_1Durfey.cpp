@@ -12,7 +12,7 @@ bool checkValidInput(string input)
     bool invalidInput;
     for(int x = 0; x < input.length(); x++)
     {
-        if(input[x] == 'I' || input[x] == 'V' || input[x] == 'X' || input[x] == 'C' || input[x] == 'D' || input[x] == 'M')
+        if(input[x] == 'I' || input[x] == 'L' || input[x] == 'V' || input[x] == 'X' || input[x] == 'C' || input[x] == 'D' || input[x] == 'M')
         {
             invalidInput = false;
         }   
@@ -70,6 +70,10 @@ class romanType
     {
         return this->decimal;
     }
+    string getRomanNumeral()
+    {
+        return this->romanNumeral;
+    }
 };
 
 int main() { 
@@ -82,11 +86,24 @@ int main() {
         cout << "Invalid input. Enter roman numeral: " << endl;
         cin >> input;
     }
-
- 
     romanType romanType1(input);
-
-    cout << romanType1.getDecimalValue() << endl;
+    int choice;
+    cout << "press 1 for decimal value or 2 for roman numeral" << endl;
+    while(!(cin>> choice) || choice > 2 || choice < 1)
+    {
+        cout << "Invalid entry/n";
+        cin.clear();
+        cin.ignore(256, '\n');
+        cout << "Please Re-Enter choice: ";
+    }
+    if(choice == 1)
+    {
+        cout << romanType1.getDecimalValue() << endl;
+    }
+    else
+    {
+        cout << romanType1.getRomanNumeral() << endl;
+    }
 }
 
 
