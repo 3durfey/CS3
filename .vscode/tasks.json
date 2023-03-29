@@ -10,7 +10,9 @@
         "-g",
         "${file}",
         "-o",
-        "${fileDirname}/${fileBasenameNoExtension}"
+        "${fileDirname}/${fileBasenameNoExtension}",
+        "-l",
+        "sqlite3"
       ],
       "options": {
         "cwd": "${fileDirname}"
