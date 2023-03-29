@@ -4,7 +4,12 @@
     "map": "cpp",
     "iostream": "cpp",
     "string": "cpp",
-    "list": "cpp"
+    "list": "cpp",
+    "ostream": "cpp",
+    "array": "cpp",
+    "vector": "cpp",
+    "type_traits": "cpp",
+    "chrono": "cpp"
   },
   "code-runner.executorMap": {
     "javascript": "node",
